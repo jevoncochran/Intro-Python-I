@@ -10,7 +10,8 @@ for more info regarding list comprehensions.
 
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
-y = []
+y = [i for i in range(6)]
+
 
 print (y)
 
@@ -18,6 +19,8 @@ print (y)
 # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
 
 y = []
+for i in range(0,10):
+    y.append(i**3)
 
 print(y)
 
@@ -28,7 +31,9 @@ a = ["foo", "bar", "baz"]
 
 y = []
 
-print(y)
+[i.upper() for i in a]
+
+print(a)
 
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
